@@ -162,7 +162,7 @@
     <div class="hero-body">
       <img src="static/images/TED-VITON.png" alt="TED-VITON Teaser" width="100%">
       <h2 class="subtitle has-text-centered">
-        <strong>Overview of TED-VITON:</strong> We present the architecture of the proposed model along with details of its block modules. <strong>(a)</strong> Our model consists of 1) DiT-GarmentNet that encodes fine-grained features of <span id="Xg">\( X_g \)</span>, 2) GS-Adapter <a href="https://example.com" target="_blank"><cite>Ye et al., 2023</cite></a> that captures higher-order semantics of garment image <span id="Xg">\( X_g \)</span>, and 3) DiT-TryOnNet, the main Transformer for processing person images. The Transformer input is formed by concatenating the noised latents <span id="Xt">\( X_t \)</span> with the segmentation mask <span id="m">\( m \)</span>, masked image <span id="model">\( \mathcal{E}(X_\text{model}) \)</span>, and Densepose <a href="https://example.com" target="_blank"><cite>Güler et al., 2018</cite></a> <span id="pose">\( \mathcal{E}(x_{\text{pose}}) \)</span>. Additionally, a detailed description of the garment (e.g., “[D]: The clothing item is a black T-shirt...”) is generated through an LLM and fed as input to both the DiT-GarmentNet and DiT-TryOnNet. The model aims to preserve garment-specific details through a text preservation loss, which ensures that key textual features are retained. <strong>(b)</strong> Intermediate features from DiT-TryOnNet and DiT-GarmentNet are concatenated. These are then refined through joint-attention and cross-attention layers, with the GS-Adapter further contributing to the refinement process. In this architecture, the DiT-TryOnNet and GS-Adapter modules are fine-tuned, while other components remain frozen.
+        <strong>Overview of TED-VITON:</strong> We present the architecture of the proposed model along with details of its block modules. <strong>(a)</strong> Our model consists of 1) DiT-GarmentNet that encodes fine-grained features of <span id="Xg">\( X_g \)</span>, 2) GS-Adapter that captures higher-order semantics of garment image <span id="Xg">\( X_g \)</span>, and 3) DiT-TryOnNet, the main Transformer for processing person images. The Transformer input is formed by concatenating the noised latents <span id="Xt">\( X_t \)</span> with the segmentation mask <span id="m">\( m \)</span>, masked image <span id="model">\( \mathcal{E}(X_\text{model}) \)</span>, and Densepose <span id="pose">\( \mathcal{E}(x_{\text{pose}}) \)</span>. Additionally, a detailed description of the garment (e.g., “[D]: The clothing item is a black T-shirt...”) is generated through an LLM and fed as input to both the DiT-GarmentNet and DiT-TryOnNet. The model aims to preserve garment-specific details through a text preservation loss, which ensures that key textual features are retained. <strong>(b)</strong> Intermediate features from DiT-TryOnNet and DiT-GarmentNet are concatenated. These are then refined through joint-attention and cross-attention layers, with the GS-Adapter further contributing to the refinement process. In this architecture, the DiT-TryOnNet and GS-Adapter modules are fine-tuned, while other components remain frozen.
       </h2>
     </div>
   </div>
@@ -170,7 +170,7 @@
 
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container" style="width: 80%; margin: 0 auto;">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <img src="static/images/VITON_1.png" alt="Result 1">
@@ -187,7 +187,7 @@
 
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container" style="width: 80%; margin: 0 auto;">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <img src="static/images/DC_1.png" alt="Result 1">
